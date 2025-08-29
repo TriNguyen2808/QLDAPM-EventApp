@@ -1,0 +1,120 @@
+/* Reset nhẹ */
+body, h2, form, input, select, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Toàn trang */
+body {
+  background-color: #f2f2f2;
+}
+
+main {
+  display:grid;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* Khung form */
+.user-form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 400px;
+  overflow: hidden; /* để header bo góc đẹp */
+}
+
+/* Header xanh */
+h2 {
+  text-align: center;
+  background-color: #32cd32;
+  color: white;
+  padding: 14px;
+  font-size: 20px;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Bên trong form */
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px;
+}
+
+/* Label */
+.user-form label {
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* Input, select */
+.user-form input[type="text"],
+.user-form input[type="email"],
+.user-form input[type="password"],
+.user-form select,
+.user-form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Avatar preview */
+.avatar-preview {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.avatar-preview img {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  object-fit: cover;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+/* Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 110px;
+  transition: background-color 0.2s ease;
+}
+
+/* Button xanh */
+#btnUpdate {
+  background-color: #28a745;
+  color: #fff;
+}
+
+#btnUpdate:hover {
+  background-color: #218838;
+}
+
+/* Button đỏ */
+#btnDelete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+#btnDelete:hover {
+  background-color: #c82333;
+}

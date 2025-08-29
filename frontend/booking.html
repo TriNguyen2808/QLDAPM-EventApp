@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đặt vé</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../css/booking.css">
+<script src="../js/header.js" defer></script>
+<script src="../js/utils.js"></script>
+<script src="../js/event-detail.js"></script>
+</head>
+<body>
+
+<div class="booking-container">
+    <!-- Cột trái -->
+    <div class="ticket-selection">
+        <a id="back-link" href="#" class="back-link"><i class="fa-solid fa-arrow-left"></i> Trở về</a>
+        <h2>Chọn vé</h2>
+        <div id="ticket-list">
+            <!-- Vé sẽ được render bằng JS -->
+        </div>
+    </div>
+
+    <!-- Cột phải -->
+    <div class="event-summary">
+        <h3 id="event-title"></h3>
+        <p><i class="fa-regular fa-calendar"></i> <span id="event-date"></span></p>
+        <p><i class="fa-solid fa-location-dot"></i> <span id="event-location"></span></p>
+        
+        <h4>Giá vé</h4>
+        <ul id="price-list"></ul>
+
+        <div class="checkout-btn" id="checkout-btn">
+            Vui lòng chọn vé
+        </div>
+    </div>
+</div>
+
+<script src="../js/booking.js"></script>
+</body>
+</html>

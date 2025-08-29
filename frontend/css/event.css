@@ -1,0 +1,25 @@
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.event-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.event-card h3 {
+    margin: 10px;
+    font-size: 18px;
+}
+.event-card p {
+    margin: 0 10px 10px;
+    color: #555;
+}

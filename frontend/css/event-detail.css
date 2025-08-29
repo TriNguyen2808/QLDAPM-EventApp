@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ====== Event Header ====== */
+.event-header {
+    max-width: 1100px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    background: #1f1f1f;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.event-info {
+    flex: 1;
+}
+
+.event-info h2 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+.date, .location {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* khoảng cách giữa icon và text */
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.date i, .location i {
+    color: #4da3ff;
+    font-size: 16px;
+}
+
+.event-date, .event-location {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.event-location a {
+    color: #4da3ff;
+    text-decoration: none;
+}
+.event-location a:hover {
+    text-decoration: underline;
+}
+
+.event-price {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.buy-btn {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 18px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+.buy-btn:hover {
+    background-color: #218838;
+}
+
+.event-image img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* ====== Sections ====== */
+.event-section {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.event-section h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.seat-map {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+/* ====== Ticket list ====== */
+.ticket-list {
+    margin-top: 10px;
+}
+
+.ticket-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.ticket-item:last-child {
+    border-bottom: none;
+}
+
+.ticket-item span {
+    font-size: 15px;
+}
+
+.price {
+    min-width: 120px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.price.available {
+    color: green;
+}
+
+.price.soldout {
+    color: red;
+}
+
+.sold-btn {
+    background-color: #6c757d;
+    border: none;
+    padding: 6px 12px;
+    color: white;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+/* ====== Organizer ====== */
+.organizer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.organizer img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.organizer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.organizer-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+.organizer-email {
+    font-size: 14px;
+    color: #555;
+    margin: 2px 0 0;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+    .event-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .event-image img {
+        max-width: 100%;
+    }
+
+    .event-price {
+        justify-content: center;
+    }
+}

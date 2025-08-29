@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Báo Cáo Doanh Thu Sự Kiện</title>
+    <link rel="stylesheet" href="../css/reports.css">
+    <script src="../js/header.js" defer></script>
+    <script src="../js/utils.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Thống kê Doanh Thu Sự Kiện</h1>
+
+        <div class="filters">
+            <label for="month">Tháng:</label>
+            <select id="month">
+                <!-- Tự động tạo 1 - 12 -->
+            </select>
+
+            <label for="year">Năm:</label>
+            <input type="number" id="year" value="2025" min="2000" max="2100">
+
+            <button onclick="loadReport()">Xem báo cáo</button>
+        </div>
+
+        <div id="summary"></div>
+
+        <table id="report-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tên sự kiện</th>
+                    <th>Tổng vé</th>
+                    <th>Tổng doanh thu</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="../js/reports.js"></script>
+</body>
+</html>

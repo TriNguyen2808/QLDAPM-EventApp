@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ - Sự kiện</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/header.js" defer></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/event.js" defer></script>
+
+
+</head>
+<body>
+
+
+<!-- Slider -->
+<section class="slider" id="sliderContainer">
+    <!-- render từ event.js -->
+</section>
+
+<!-- Sự kiện hot -->
+<section class="event-section">
+    <h2>Sự kiện hot</h2>
+    <div class="slider-wrapper">
+        <button class="slide-btn prev" id="hotPrevBtn" onclick="prevHotSlide()">❮</button>
+        <div class="slider" id="hotSliderContainer"></div>
+        <button class="slide-btn next" id="hotNextBtn" onclick="nextHotSlide()">❯</button>
+    </div>
+</section>
+
+<!-- Danh sách sự kiện -->
+<section class="event-section">
+    <h2>Danh sách sự kiện</h2>
+    <div class="event-grid" id="eventList"></div>
+    <div id="pagination" class="pagination"></div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+    renderMenuByRole();
+    await renderUserInfo();
+    loadEventTypes();
+    loadHotEvents();
+    loadEvents();
+});
+
+</script>
+
+</body>
+</html>

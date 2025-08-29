@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý người dùng</title>
+  <link rel="stylesheet" href="../css/user-management.css">
+  <script src="../js/header.js" defer></script>
+  <script src="../js/utils.js"></script>
+</head>
+</head>
+<body>
+
+  <main>
+  <h2>Danh sách người dùng</h2>
+  <div class="action-buttons">
+    <button id="btnCreate">Tạo người dùng</button>
+    <button id="btnDelete">Xóa người dùng</button>
+
+    <!-- Bộ lọc -->
+    <label for="roleFilter">Lọc theo vai trò:</label>
+    <select id="roleFilter">
+      <option value="all">Tất cả</option>
+      <option value="1">Admin</option>
+      <option value="2">Organizer</option>
+      <option value="3">Attendee</option>
+    </select>
+
+    <!-- Nút sắp xếp -->
+    <button id="btnSort">Sắp xếp theo ID ↑</button>
+
+    <span id="deleteMessage"></span>
+  </div>
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th></th>
+        <th>ID</th>
+        <th>Tên</th>
+        <th>Email</th>
+        <th>Vai trò</th>
+        <th>Hoạt động</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- dữ liệu load từ JS -->
+    </tbody>
+  </table>
+  </main>
+
+
+  <script src="../js/user-management.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Cập nhật người dùng</title>
+  <link rel="stylesheet" href="../css/user-update-delete.css">
+  <script src="../js/header.js" defer></script>
+  <script src="../js/utils.js"></script>
+</head>
+<body>
+  <main>
+    <h2>Thông tin người dùng</h2>
+    <form id="userForm" class="user-form">
+      <label>username</label>
+      <input type="text" id="username" name="username">
+
+      <label>Email</label>
+      <input type="email" id="email" name="email">
+
+      <label>Họ</label>
+      <input type="text" id="first_name" name="first_name">
+
+      <label>Tên</label>
+      <input type="text" id="last_name" name="last_name">
+
+      <label>Vai trò</label>
+      <select id="role" name="role">
+        <option value="1">Admin</option>
+        <option value="2">Organizer</option>
+        <option value="3">Attendee</option>
+      </select>
+
+      <label>Ảnh đại diện</label>
+      <input type="file" id="avatarInput" accept="image/*">
+      <div class="avatar-preview">
+        <img id="avatarPreview" src="" alt="Avatar" width="120">
+      </div>
+
+      <div class="action-buttons">
+        <button type="button" id="btnUpdate">Chỉnh sửa</button>
+        <button type="button" id="btnDelete">Xóa</button>
+      </div>
+    </form>
+  </main>
+  <script src="../js/user-update-delete.js"></script>
+</body>
+</html>

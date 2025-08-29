@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.action-buttons {
+  margin-bottom: 10px;
+}
+
+.action-buttons button {
+  margin-right: 10px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#btnCreate {
+  background: #1e7d22;
+  color: #fff;
+}
+
+#btnDelete {
+  background: #d9534f;
+  color: #fff;
+}
+
+#deleteMessage {
+  font-weight: bold;
+  margin-left: 10px;
+  color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+table thead {
+  background: #eee;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:hover {
+  background: #f1f1f1;
+  cursor: pointer;
+}
+
+table tbody tr.selected {
+  background: #ffe0e0;
+}

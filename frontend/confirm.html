@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Xác nhận đặt vé</title>
+<link rel="stylesheet" href="../css/confirm.css" />
+<script src="../js/utils.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Xác nhận đặt vé</h1>
+
+  <div class="event-info">
+    <h2 id="event-title">Tên sự kiện</h2>
+    <p><strong>Thời gian:</strong> <span id="event-time"></span></p>
+    <p><strong>Địa điểm:</strong> <span id="event-location"></span></p>
+  </div>
+
+  <div class="timer">
+    <h3>Hoàn tất đặt vé trong: <span id="countdown">15:00</span></h3>
+  </div>
+
+  <div class="ticket-summary">
+    <h3>Thông tin vé đã chọn</h3>
+    <table id="ticket-table">
+      <thead>
+        <tr>
+          <th>Loại vé</th>
+          <th>Số lượng</th>
+          <th>Giá</th>
+          <th>Thành tiền</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS sẽ render vào đây -->
+      </tbody>
+    </table>
+    
+    <div class="discount-section">
+    <label for="discount-select"><strong>Mã giảm giá:</strong></label>
+    <select id="discount-select">
+        <option value="">-- Chọn mã giảm giá --</option>
+    </select>
+    <span id="discount-amount">- 0 đ</span>
+    </div>
+
+    <div class="total-amount">
+    Tổng tiền: <span id="total-amount">0 đ</span>
+</div>
+
+  </div>
+
+  <div class="buttons">
+    <button id="back-btn">Chọn lại vé</button>
+    <button id="confirm-btn" class="confirm">Xác nhận đặt vé</button>
+  </div>
+</div>
+
+<script src="../js/confirm.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo sự kiện</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="../css/create-event.css">
+    <script src="../js/utils.js"></script>
+    <script src="../js/create-event.js" defer></script>
+</head>
+<body>
+<header>
+    <h2>Tạo sự kiện mới</h2>
+</header>
+
+<main>
+    <form id="createEventForm" enctype="multipart/form-data">
+        <label>Tên sự kiện</label>
+        <input type="text" name="name" required>
+
+        <label>Mô tả</label>
+        <textarea name="description" rows="4" required></textarea>
+
+        <label>Địa điểm</label>
+        <input type="text" id="locationInput" name="location" placeholder="Nhập địa điểm..." required>
+        <div id="map" style="width:100%; height:300px; margin-top:10px;"></div>
+
+        <input type="hidden" name="latitude" id="latitude">
+        <input type="hidden" name="longitude" id="longitude">
+
+        <label>Thời gian bắt đầu</label>
+        <input type="datetime-local" name="start_time" required>
+
+        <label>Thời gian kết thúc</label>
+        <input type="datetime-local" name="end_time" required>
+
+        <label>Hình ảnh</label>
+        <input type="file" name="image" accept="image/*" required>
+
+        <label>Loại sự kiện</label>
+        <select name="event_type" id="eventTypeSelect" required>
+            <option value="">Đang tải...</option>
+        </select>
+
+        <button type="submit">Tạo sự kiện</button>
+    </form>
+
+    <div id="message"></div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="../css/header.css">
+
+<header class="top-bar">
+    <div class="logo">
+        <a href="index.html">ticketbox</a>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Bạn tìm gì hôm nay?">
+        <button id="btnSearch">Tìm kiếm</button>
+
+        <!-- Dropdown kết quả tìm kiếm -->
+        <div id="searchDropdown" class="search-dropdown hidden">
+            <!-- Tìm kiếm gần đây -->
+            <div class="recent-search">
+                <h4>Tìm kiếm gần đây</h4>
+                <ul id="recentList"></ul>
+            </div>
+            
+            <!-- Bộ lọc nâng cao -->
+            <div class="filter-section">
+                <h4>Bộ lọc nâng cao</h4>
+                <div class="filter-box">
+                    <select id="periodSelect">
+                        <option value="">Tất cả</option>
+                        <option value="today">Hôm nay</option>
+                        <option value="week">Tuần này</option>
+                        <option value="month">Tháng này</option>
+                    </select>
+                    <input type="number" id="minPrice" placeholder="Giá tối thiểu">
+                    <input type="number" id="maxPrice" placeholder="Giá tối đa">
+                </div>
+            </div>
+
+            <!-- Khám phá theo Thể loại -->
+            <div class="category-suggest">
+                <h4>Khám phá theo Thể loại</h4>
+                <div class="category-list" id="categoryList"></div>
+            </div>
+
+            <!-- Gợi ý sự kiện -->
+            <div class="event-suggest">
+                <h4>Gợi ý dành cho bạn</h4>
+                <div class="event-list" id="eventSuggestList"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu sẽ render động theo role -->
+    <div class="top-menu" id="topMenu">
+        <span id="authLinks"></span>
+    </div>
+</header>
+
+<script src="../js/header.js"></script>
+<script src="../js/utils.js"></script>

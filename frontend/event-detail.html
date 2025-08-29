@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chi tiết sự kiện</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../css/event-detail.css">
+<script src="../js/header.js" defer></script>
+<script src="../js/utils.js"></script>
+</head>
+<body>
+
+<div class="event-header">
+    <div class="event-info">
+        <h2 id="event-title"></h2>
+        <div class="date">
+    <i class="fa-regular fa-calendar"></i>
+    <span class="event-date" id="event-date"></span>
+</div>
+<div class="location">
+    <i class="fa-solid fa-location-dot"></i>
+    <span class="event-location" id="event-location"></span>
+</div>
+ 
+        <div class="event-price">
+            <span>Giá từ <b id="event-price"></b></span>
+            <button class="buy-btn" id="buy-ticket-btn">Mua vé ngay</button>
+        </div>
+    </div>
+    <div class="event-image">
+        <img id="event-image" src="" alt="Event Poster">
+    </div>
+</div>
+
+<div class="event-section">
+    <h3>Giới thiệu</h3>
+    <p id="event-description"></p>
+</div>
+
+<div class="event-section">
+    <h3>Thông tin vé</h3>
+    <button class="buy-btn">Mua vé ngay</button>
+    <div class="ticket-list" id="ticket-list">
+        <!-- vé sẽ được render bằng JS -->
+    </div>
+</div>
+
+<div class="event-section">
+    <h3>Ban tổ chức</h3>
+    <div class="organizer">
+        <img id="organizer-logo" src="" alt="Ban tổ chức">
+        <div class="organizer-info">
+            <p id="organizer-name" class="organizer-name"></p>
+            <p id="organizer-email" class="organizer-email"></p>
+        </div>
+    </div>
+</div>
+
+<script src="../js/event-detail.js"></script>
+</body>
+</html>

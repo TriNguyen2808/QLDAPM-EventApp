@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sự kiện</title>
+    <script src="../js/utils.js"></script>
+    <script src="../js/manage.js" defer></script>
+</head>
+<body>
+<h2>Sự kiện của tôi</h2>
+<div id="eventList"></div>
+<hr>
+<h3>Tạo mới sự kiện</h3>
+<form id="eventForm">
+    <input name="name" placeholder="Tên sự kiện"><br>
+    <input name="location" placeholder="Địa điểm"><br>
+    <input name="start_time" type="datetime-local"><br>
+    <input name="end_time" type="datetime-local"><br>
+    <textarea name="content" placeholder="Mô tả"></textarea><br>
+    <button type="submit">Tạo sự kiện</button>
+</form>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderMenuByRole();
+    });
+</script>
+</body>
+</html>

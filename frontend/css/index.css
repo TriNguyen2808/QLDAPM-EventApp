@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+
+
+
+
+/* ===== SLIDER ===== */
+.slider {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    background-color: #2b2b2b;
+}
+.slider-item {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    max-width: 48%;
+}
+.slider-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.slider-item a {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: white;
+    color: black;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== EVENT SECTION ===== */
+.event-section {
+    padding: 20px;
+}
+.event-section h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.event-card {
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+.event-card:hover {
+    transform: translateY(-5px);
+}
+.event-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+.event-card h3 {
+    margin: 10px;
+    font-size: 15px;
+}
+.event-card a {
+    display: block;
+    padding: 8px;
+    color: #00b14f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.pagination button {
+    padding: 6px 12px;
+    background: #00b14f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.pagination button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.slide-btn.prev {
+    left: -35px;
+}
+
+.slide-btn.next {
+    right: -35px;
+}
+
+.slide-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+/* Thẻ sự kiện hot giống thẻ sự kiện thường */
+.hot-event-card {
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex-shrink: 0;
+}
+
+.hot-event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hot-event-card h3 {
+    font-size: 1rem;
+    padding: 8px;
+    color: #fff;
+}
+
+.hot-event-card a {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    background: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Hiệu ứng nảy khi hover */
+.hot-event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}

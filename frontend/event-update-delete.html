@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉnh sửa / Xóa sự kiện</title>
+    <link rel="stylesheet" href="../css/event-update-delete.css">
+    <script src="../js/header.js" defer></script>
+    <script src="../js/utils.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+<body>
+        <h2 class="page-title">Tạo sự kiện mới</h2>
+
+        <form id="event-form">
+            <label>Tên sự kiện</label>
+            <input type="text" id="event-name">
+
+            <label>Mô tả</label>
+            <input type="text" id="event-description">
+
+            <label>Địa điểm</label>
+            <input type="text" id="event-location">
+
+            <div id="map"></div>
+
+            <label>Thời gian bắt đầu</label>
+            <input type="datetime-local" id="event-start">
+
+            <label>Thời gian kết thúc</label>
+            <input type="datetime-local" id="event-end">
+
+            <label>Hình ảnh</label>
+            <div style="display:flex; gap:10px; align-items:center;">
+                <!-- <input type="text" id="event-image" placeholder="URL ảnh"> -->
+                <input type="file" id="event-image-upload" accept="image/*">
+            </div>
+            <img id="event-image-preview" src="" alt="Xem trước ảnh" style="max-width:200px; margin-top:10px; display:none;">
+            
+            <label>Loại sự kiện</label>
+            <select id="event-type"></select>
+
+            <h3>Loại vé</h3>
+            <div class="ticket-title">
+                    <span>Tên</span>
+                    <span>Loại vé</span>
+                    <span>Giá</span>
+                    <span>Số lượng</span>
+                </div>
+            <div id="ticket-list" class="ticket-list">
+            </div>
+            <button type="button" id="add-ticket-btn" style="margin-top:10px;">Thêm loại vé</button>
+
+            <div class="action-buttons">
+                <button type="button" id="update-btn">Chỉnh sửa</button>
+                <button type="button" id="delete-btn">Xóa</button>
+            </div>
+        </form>
+
+    <script src="../js/event-update-delete.js"></script>
+</body>
+</html>

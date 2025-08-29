@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+.booking-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.ticket-selection {
+    flex: 2;
+    padding: 20px 40px;
+}
+
+.back-link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.ticket-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #555;
+    padding: 15px 0;
+}
+
+.ticket-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-name {
+    font-weight: bold;
+}
+
+.ticket-price {
+    color: #0f0;
+}
+
+.ticket-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ticket-controls button {
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.ticket-controls span {
+    min-width: 20px;
+    text-align: center;
+}
+
+.soldout-btn {
+    background-color: #ff6666;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: not-allowed;
+}
+
+.event-summary {
+    flex: 1;
+    background-color: #2a2a2a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.event-summary h3 {
+    margin-top: 0;
+    font-size: 36px;
+}
+
+#price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#price-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.checkout-btn {
+    background-color: #555;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: not-allowed;
+    margin-top: 20px;
+}
+
+.checkout-btn.active {
+    background-color: #28a745;
+    cursor: pointer;
+}
+
+input[type=number] {
+    width: 40px;          
+    height: 30px;         
+    text-align: center;   
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;   /* Nếu muốn bo góc nhẹ, đổi thành 0 nếu muốn vuông hoàn toàn */
+    -moz-appearance: textfield;  /* Firefox ẩn spinner */
+}
+
+/* Chrome, Safari, Edge: ẩn spinner */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
